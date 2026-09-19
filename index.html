@@ -48,20 +48,20 @@ nav{
 .cv-link{border:1px solid var(--crimson);padding:7px 12px}
 
 /* HERO */
-.hero{padding:86px 0 78px;background:linear-gradient(120deg,#fff 60%,#f8f3f4)}
-.hero-grid{display:grid;grid-template-columns:1.38fr .72fr;gap:76px;align-items:center}
+.hero{padding:72px 0 68px;background:linear-gradient(120deg,#fff 62%,#faf7f7)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(300px,.72fr);gap:82px;align-items:center}
 .kicker{font-size:.76rem;text-transform:uppercase;letter-spacing:.18em;color:var(--crimson);font-weight:800}
-h1{font-size:clamp(3.6rem,7vw,6.5rem);line-height:.94;letter-spacing:-.055em;margin:13px 0 20px}
-.role{font-family:Georgia,serif;color:var(--crimson);font-size:clamp(1.5rem,2.8vw,2.15rem);margin-bottom:6px}
-.affiliation{font-weight:650;color:#3d3d42;margin-bottom:23px}
-.hero-copy{font-size:1.12rem;max-width:760px;color:#55555c}
+h1{font-size:clamp(3rem,5.2vw,5rem);line-height:.96;letter-spacing:-.045em;margin:12px 0 14px}
+.role{font-family:Georgia,serif;color:var(--crimson);font-size:clamp(1.45rem,2.2vw,1.95rem);margin-bottom:5px}
+.affiliation{font-weight:650;color:#3d3d42;margin-bottom:21px;font-size:.98rem}
+.hero-copy{font-size:1.06rem;max-width:670px;color:#55555c;line-height:1.75}
 .hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:29px}
 .button{display:inline-block;text-decoration:none;padding:10px 16px;border:1px solid var(--crimson);font-size:.88rem;font-weight:750;letter-spacing:.01em}
 .button.primary{background:var(--crimson);color:#fff}.button:hover{transform:translateY(-1px)}
 .portrait-wrap{position:relative}
-.portrait{width:100%;aspect-ratio:1/1.08;object-fit:cover;object-position:center 12%;border-radius:3px;filter:saturate(.92);box-shadow:20px 20px 0 #eee8e4}
-.photo-caption{font-size:.75rem;color:var(--muted);margin-top:29px}
-.hero-meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:27px;color:#666;font-size:.82rem}
+.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 10%;border-radius:2px;filter:saturate(.94);box-shadow:16px 16px 0 #eee8e4}
+.photo-caption{font-size:.72rem;color:var(--muted);margin-top:23px;letter-spacing:.01em}
+.hero-meta{display:flex;gap:13px;flex-wrap:wrap;margin-top:24px;color:#666;font-size:.79rem}
 .hero-meta span:not(:last-child)::after{content:"·";margin-left:16px;color:var(--gold)}
 
 /* GENERAL */
@@ -133,7 +133,7 @@ footer{background:#111113;color:#a7a7ad;padding:31px 0;font-size:.8rem}
   .navlinks{display:none}.hero{padding-top:54px}.hero-grid{grid-template-columns:1fr;gap:45px}
   .portrait-wrap{max-width:380px}.section-head,.about-grid,.featured,.lab-grid{grid-template-columns:1fr;gap:25px}
   .research-areas{grid-template-columns:1fr}.timeline{margin-left:0}.timeline-row{grid-template-columns:1fr;gap:4px}
-  .teaching-grid,.edu{grid-template-columns:1fr}h1{font-size:3.7rem}
+  .teaching-grid,.edu{grid-template-columns:1fr}h1{font-size:3.25rem}
 }
 @media(max-width:500px){.hero-meta span::after{display:none}.hero-meta{display:grid;gap:4px}}
 </style>
@@ -162,17 +162,17 @@ footer{background:#111113;color:#a7a7ad;padding:31px 0;font-size:.8rem}
   <div class="container hero-grid">
     <div>
       <div class="kicker">Economics · Mathematics · Development</div>
-      <h1>Déo<br>Kabanga</h1>
+      <h1>Déo Kabanga</h1>
       <div class="role">Mathematical Economist</div>
       <div class="affiliation">PhD Student in Economics · Kobe University</div>
       <p class="hero-copy">
-        I study how household risk, economic shocks, and inequality shape investment in education.
-        My work combines economic theory, applied econometrics, survey data, and mathematical reasoning
-        to address questions in education and development.
+        I study how household shocks, risk, and inequality shape investment in education,
+        using economic theory, applied econometrics, and household survey data.
       </p>
       <div class="hero-actions">
         <a class="button primary" href="#research">Research</a>
         <a class="button" href="#experience">Experience</a>
+        <a class="button" href="#lab">Digital Lab</a>
         <a class="button" href="https://github.com/KabDHiGA" target="_blank" rel="noopener">GitHub ↗</a>
       </div>
       <div class="hero-meta">

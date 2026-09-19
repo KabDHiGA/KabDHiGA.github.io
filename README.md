@@ -1,19 +1,4 @@
-# Déo Kabanga Academic Website
+# Refined Déo Kabanga academic website
 
-## Publish/update on GitHub Pages
-Upload both files in this folder to the root of the `KabDHiGA.github.io` repository:
-
-- `index.html`
-- `profile-photo.png`
-
-Commit the changes. GitHub Pages will redeploy automatically.
-
-## Future additions
-When available, the site can be extended with:
-- CV PDF
-- Google Scholar
-- ORCID
-- LinkedIn
-- publication citations / DOI links
-- working papers
-- research datasets and replication code
+Upload `index.html` to the root of `KabDHiGA.github.io` and replace the existing file.
+`profile-photo.png` is unchanged and only needs uploading again if GitHub does not already have it.
