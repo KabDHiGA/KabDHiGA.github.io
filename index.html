@@ -527,100 +527,6 @@ section{
 
 
 /* =========================
-   TEACHING
-========================= */
-
-.teaching-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:22px;
-}
-
-.course{
-  background:#fff;
-  border:1px solid var(--line);
-  padding:25px;
-}
-
-.course h3{
-  font-size:1.2rem;
-  margin:0 0 8px;
-}
-
-.course p{
-  margin:0;
-  color:var(--muted);
-  font-size:.92rem;
-}
-
-.tags{
-  display:flex;
-  gap:7px;
-  flex-wrap:wrap;
-  margin-top:15px;
-}
-
-.tag{
-  font-size:.72rem;
-  border:1px solid #d9c9cf;
-  color:var(--crimson);
-  padding:3px 8px;
-}
-
-
-/* =========================
-   DIGITAL LAB
-========================= */
-
-.lab-grid{
-  display:grid;
-  grid-template-columns:1.15fr .85fr;
-  gap:22px;
-}
-
-.lab-card{
-  background:#161619;
-  color:white;
-  padding:34px;
-  min-height:270px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-}
-
-.lab-card h3{
-  color:white;
-  font-size:1.55rem;
-  margin:7px 0 8px;
-}
-
-.lab-card p{
-  color:#c9c9cd;
-  max-width:560px;
-}
-
-.lab-card .button{
-  border-color:#fff;
-  color:#fff;
-  width:max-content;
-}
-
-.lab-small{
-  border:1px solid var(--line);
-  padding:30px;
-  background:#fff;
-}
-
-.lab-small h3{
-  margin:0 0 10px;
-}
-
-.lab-small p{
-  color:var(--muted);
-}
-
-
-/* =========================
    EDUCATION
 ========================= */
 
@@ -803,10 +709,6 @@ footer{
 
       <a href="#experience">Experience</a>
 
-      <a href="#teaching">Teaching</a>
-
-      <a href="#lab">Digital Lab</a>
-
       <a href="#education">Education</a>
 
       <a href="#contact">Contact</a>
@@ -866,10 +768,6 @@ footer{
 
         <a class="button" href="#experience">
           Experience
-        </a>
-
-        <a class="button" href="#lab">
-          Digital Lab
         </a>
 
         <a class="button"
@@ -1574,115 +1472,7 @@ footer{
      TEACHING
 ========================= -->
 
-<section id="teaching">
 
-  <div class="container">
-
-    <div class="section-head">
-
-      <div class="section-label">
-        05 · Teaching
-      </div>
-
-      <div>
-
-        <h2 class="section-title">
-          Teaching quantitative reasoning through structure
-          and visualization.
-        </h2>
-
-        <p class="section-deck">
-
-          My teaching spans university quantitative methods
-          and IB mathematics, with a focus on conceptual
-          understanding and technology-assisted exploration.
-
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <div class="teaching-grid">
-
-      <div class="course">
-
-        <h3>IB Mathematics</h3>
-
-        <p>
-          Probability and statistics, calculus, functions,
-          modelling, graph theory, financial mathematics,
-          and technology-supported problem solving.
-        </p>
-
-        <div class="tags">
-          <span class="tag">AI HL/SL</span>
-          <span class="tag">AA</span>
-          <span class="tag">GDC</span>
-        </div>
-
-      </div>
-
-
-      <div class="course">
-
-        <h3>Econometrics</h3>
-
-        <p>
-          Regression, inference, identification,
-          model interpretation, and empirical applications
-          in economics and social science.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Applied</span>
-          <span class="tag">Stata</span>
-          <span class="tag">R</span>
-        </div>
-
-      </div>
-
-
-      <div class="course">
-
-        <h3>Inferential Statistics</h3>
-
-        <p>
-          Sampling, estimation, hypothesis testing,
-          probability models, and statistical reasoning.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Statistics</span>
-          <span class="tag">Probability</span>
-        </div>
-
-      </div>
-
-
-      <div class="course">
-
-        <h3>Policy Evaluation</h3>
-
-        <p>
-          Foundations of impact evaluation, randomized experiments,
-          difference-in-differences, and evidence interpretation.
-        </p>
-
-        <div class="tags">
-          <span class="tag">RCT</span>
-          <span class="tag">DiD</span>
-          <span class="tag">Causal inference</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
 
 
 
@@ -1690,119 +1480,7 @@ footer{
      DIGITAL LAB
 ========================= -->
 
-<section class="alt" id="lab">
 
-  <div class="container">
-
-    <div class="section-head">
-
-      <div class="section-label">
-        06 · Digital Lab
-      </div>
-
-      <div>
-
-        <h2 class="section-title">
-          Interactive mathematics and quantitative learning tools.
-        </h2>
-
-        <p class="section-deck">
-          A growing collection of browser-based resources designed
-          to make mathematical ideas visible and explorable.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <p style="margin:0 0 25px"><a class="button primary" href="/visualization/">Launch Mathematics Visualization Studio — All Explorers ↗</a></p>
-
-    <div class="lab-grid">
-
-      <article class="lab-card">
-
-        <div>
-
-          <div class="kicker" style="color:#d8a9b9">
-            Interactive explorer
-          </div>
-
-          <h3>
-            Normal Distribution Explorer
-          </h3>
-
-          <p>
-            Explore how the mean and standard deviation change
-            the location, spread, and probability structure
-            of a normal distribution.
-          </p>
-
-        </div>
-
-
-        <a
-          class="button"
-          href="/visualization/#normal"
-          target="_blank"
-          rel="noopener">
-
-          Launch explorer ↗
-
-        </a>
-
-      </article>
-
-
-      <article class="lab-small">
-
-        <div class="kicker">
-          Repository
-        </div>
-
-        <h3>
-          Mathematics Teaching Resources
-        </h3>
-
-        <p>
-          Interactive activities and digital resources
-          for quantitative teaching are maintained
-          through GitHub Pages.
-        </p>
-
-        <p>
-
-          <a
-            href="https://kabdhiga.github.io/G10-AI-AA-HL/"
-            target="_blank"
-            rel="noopener">
-
-            Browse resources →
-
-          </a>
-
-        </p>
-
-        <p>
-
-          <a
-            href="https://github.com/KabDHiGA"
-            target="_blank"
-            rel="noopener">
-
-            Source code on GitHub →
-
-          </a>
-
-        </p>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
 
 
 
@@ -1982,7 +1660,7 @@ footer{
 </section>
 
 
-<section id="teaching-resources" style="padding:56px 0"><div class="container"><div class="section-head"><div class="section-label">Teaching Resources</div><div><h2 class="section-title">Mathematics teaching materials.</h2><p class="section-deck">Explore classroom resources on counting principles, probability, and GDC-based mathematics.</p><p><a class="button primary" href="teaching-resources.html">View Teaching Resources ↗</a></p></div></div></div></section>
+
 </main>
 
 
